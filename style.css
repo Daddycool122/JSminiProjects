@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('https://elearn.nptel.ac.in/wp-content/uploads/2024/04/Programming-with-AI.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+}
+
+/* Header Styling */
+header {
+    font-size: 36px;
+    color: #ffb400;
+    text-transform: uppercase;
+    margin: 40px 0;
+    animation: fadeInDown 1s ease-in-out;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Link Styling */
+.container a {
+    font-size: 20px;
+    color: #ff6f61;
+    background-color: #333;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container a:hover {
+    background-color: #ffb400;
+    color: #121212;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    font-size: 18px;
+    color: #666;
+    padding: 20px 0;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    header {
+        font-size: 28px;
+    }
+
+    .container a {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}

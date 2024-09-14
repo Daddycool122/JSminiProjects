@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 60px; /* Prevent overlap with the top nav */
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Navigation Styling */
+a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: #ff6f61;
+    color: #121212;
+    border-radius: 5px;
+}
+
+/* Main Project Container */
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Insert Container */
+#insert {
+    background-color: #222;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 6px 30px rgba(255, 111, 97, 0.4);
+    transition: background-color 0.4s ease, box-shadow 0.3s ease;
+    max-width: 800px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+table:hover {
+    transform: scale(1.02);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    color: #ffb400;
+}
+
+th {
+    background-color: #444;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+td {
+    font-size: 16px;
+    color: #fff;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Key Text Styling */
+#key {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Table Row Animation */
+tr {
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: #ff6f61;
+}
+
+/* Table Cell Animation */
+td {
+    transition: color 0.3s ease;
+}
+
+tr:hover td {
+    color: #121212;
+}
+
+/* Color Block Inside Insert */
+.color {
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    #insert {
+        width: 90%;
+        padding: 30px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
